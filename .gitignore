@@ -1,0 +1,7 @@
+.cursor/
+Decompiled/
+Libraries/
+bin
+obj
+README.md
+*.dll

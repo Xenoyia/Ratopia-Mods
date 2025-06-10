@@ -1,0 +1,476 @@
+[
+    {
+      "Index": 1,
+      "Category": 0,
+      "Name": "Active",
+      "Icon": "gamescene/ui/ui_canvas/icon/skill/Icon_Passive_Horse",
+      "T_Name": "Active",
+      "EffectValue_A": 3.0,
+      "EffectValue_B": 0.0,
+      "Description": "Dexterity <color=#1E8A00>+3</color>",
+      "List_Ability": [
+        1
+      ],
+      "List_AbilityValue": [
+        3.0
+      ],
+      "List_Mat": [],
+      "List_Mat_Num": []
+    },
+    {
+      "Index": 3,
+      "Category": 0,
+      "Name": "Muscular",
+      "Icon": "gamescene/ui/buildingicon/ArenaIcon",
+      "T_Name": "Muscular",
+      "EffectValue_A": 3.0,
+      "EffectValue_B": 0.0,
+      "Description": "Strength <color=#1E8A00>+3</color>",
+      "List_Ability": [
+        0
+      ],
+      "List_AbilityValue": [
+        3.0
+      ],
+      "List_Mat": [],
+      "List_Mat_Num": []
+    },
+    {
+      "Index": 5,
+      "Category": 0,
+      "Name": "Gifted",
+      "Icon": "gamescene/ui/ui_canvas/icon/Icon_Encyclopedia",
+      "T_Name": "Gifted",
+      "EffectValue_A": 3.0,
+      "EffectValue_B": 0.0,
+      "Description": "Intelligence <color=#1E8A00>+3</color>",
+      "List_Ability": [
+        2
+      ],
+      "List_AbilityValue": [
+        3.0
+      ],
+      "List_Mat": [],
+      "List_Mat_Num": []
+    },
+    {
+      "Index": 7,
+      "Category": 0,
+      "Name": "Big",
+      "Icon": "gamescene/ui/ui_canvas/icon/Icon_CCTV",
+      "T_Name": "Big",
+      "EffectValue_A": 0.25,
+      "EffectValue_B": 0.0,
+      "Description": "Size <color=#1E8A00>+25%</color>",
+      "List_Ability": [
+        512
+      ],
+      "List_AbilityValue": [
+        0.25
+      ],
+      "List_Mat": [],
+      "List_Mat_Num": []
+    },
+    {
+      "Index": 9,
+      "Category": 0,
+      "Name": "Smol",
+      "Icon": "gamescene/character/team/bufficon/Icon_Children",
+      "T_Name": "Smol",
+      "EffectValue_A": -0.25,
+      "EffectValue_B": 0.0,
+      "Description": "Size <color=#C83232>-25%</color>",
+      "List_Ability": [
+        512
+      ],
+      "List_AbilityValue": [
+        -0.25
+      ],
+      "List_Mat": [],
+      "List_Mat_Num": []
+    },
+    {
+      "Index": 11,
+      "Category": 0,
+      "Name": "Amphibious",
+      "Icon": "gamescene/ui/ui_canvas/icon/Icon_DrownX",
+      "T_Name": "Amphibious",
+      "EffectValue_A": 1.0,
+      "EffectValue_B": 0.0,
+      "Description": "Able to breathe in water",
+      "List_Ability": [
+        106
+      ],
+      "List_AbilityValue": [
+        1.0
+      ],
+      "List_Mat": [],
+      "List_Mat_Num": []
+    },
+    {
+      "Index": 13,
+      "Category": 0,
+      "Name": "Strong Feet",
+      "Icon": "gamescene/ui/ui_canvas/icon/Icon_KnockX",
+      "T_Name": "Strong Feet",
+      "EffectValue_A": 1.0,
+      "EffectValue_B": 0.0,
+      "Description": "Able to walk on burning tiles",
+      "List_Ability": [
+        107
+      ],
+      "List_AbilityValue": [
+        1.0
+      ],
+      "List_Mat": [],
+      "List_Mat_Num": []
+    },
+    {
+      "Index": 15,
+      "Category": 0,
+      "Name": "Loyal",
+      "Icon": "gamescene/ui/ui_canvas/icon/timetable/Icon_RestTime",
+      "T_Name": "Loyal",
+      "EffectValue_A": 1.0,
+      "EffectValue_B": 0.0,
+      "Description": "Will never rebel",
+      "List_Ability": [
+        105
+      ],
+      "List_AbilityValue": [
+        1.0
+      ],
+      "List_Mat": [],
+      "List_Mat_Num": []
+    },
+    {
+      "Index": 17,
+      "Category": 0,
+      "Name": "Good Natured",
+      "Icon": "gamescene/ui/ui_canvas/icon/Icon_CrimX",
+      "T_Name": "Good Natured",
+      "EffectValue_A": 1.0,
+      "EffectValue_B": 0.0,
+      "Description": " Will never commit crime",
+      "List_Ability": [
+        110
+      ],
+      "List_AbilityValue": [
+        1.0
+      ],
+      "List_Mat": [],
+      "List_Mat_Num": []
+    },
+    {
+      "Index": 4000,
+      "Category": 0,
+      "Name": "Jack of All Trades",
+      "Icon": "gamescene/ui/ui_canvas/icon/Icon_AllStat",
+      "T_Name": "Jack of All Trades",
+      "EffectValue_A": 1.0,
+      "EffectValue_B": 0.0,
+      "Description": "STR, DEX and INT <color=#1E8A00>+1</color>",
+      "List_Ability": [
+        0,
+        1,
+        2
+      ],
+      "List_AbilityValue": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "List_Mat": [],
+      "List_Mat_Num": []
+    },
+    {
+      "Index": 4001,
+      "Category": 0,
+      "Name": "Veteran",
+      "Icon": "gamescene/ui/ui_canvas/icon/Icon_AssembleBuff",
+      "T_Name": "Veteran",
+      "EffectValue_A": 1.0,
+      "EffectValue_B": 0.0,
+      "Description": "ATK and DEF <color=#1E8A00>+1</color>, HP <color=#C83232>+20</color>",
+      "List_Ability": [
+        5,
+        6,
+        7
+      ],
+      "List_AbilityValue": [
+        1.0,
+        1.0,
+        20.0
+      ],
+      "List_Mat": [],
+      "List_Mat_Num": []
+    },
+    {
+      "Index": 4002,
+      "Category": 0,
+      "Name": "Natural Angler",
+      "Icon": "gamescene/ui/ui_canvas/icon/Icon_Fishing",
+      "T_Name": "Natural Angler",
+      "EffectValue_A": 1.0,
+      "EffectValue_B": 0.0,
+      "Description": "Fish caught <color=#1E8A00>+1</color>",
+      "List_Ability": [
+        243
+      ],
+      "List_AbilityValue": [
+        1.0
+      ],
+      "List_Mat": [],
+      "List_Mat_Num": []
+    },
+    {
+      "Index": 106,
+      "Category": 1,
+      "Name": "Hard Worker",
+      "Icon": "gamescene/ui/ui_canvas/icon/Icon_AnvilEffect",
+      "T_Name": "Hard Worker",
+      "EffectValue_A": 0.2,
+      "EffectValue_B": -999,
+      "Description": "Production efficiency <color=#1E8A00>+20%</color>",
+      "List_Ability": [
+        13
+      ],
+      "List_AbilityValue": [
+        0.2
+      ],
+      "List_Mat": [],
+      "List_Mat_Num": []
+    },
+    {
+      "Index": 108,
+      "Category": 1,
+      "Name": "Hauler",
+      "Icon": "gamescene/ui/ui_canvas/icon/Icon_Movement",
+      "T_Name": "Hauler",
+      "EffectValue_A": 2.0,
+      "EffectValue_B": -999,
+      "Description": "Carry capacity <color=#1E8A00>+2</color>",
+      "List_Ability": [
+        3
+      ],
+      "List_AbilityValue": [
+        2.0
+      ],
+      "List_Mat": [],
+      "List_Mat_Num": []
+    },
+    {
+      "Index": 110,
+      "Category": 1,
+      "Name": "Regenerative",
+      "Icon": "gamescene/character/team/bufficon/Icon_HpGen",
+      "T_Name": "Regenerative",
+      "EffectValue_A": 1.0,
+      "EffectValue_B": -999,
+      "Description": "Health regeneration <color=#1E8A00>+1</color> per tick",
+      "List_Ability": [
+        202
+      ],
+      "List_AbilityValue": [
+        1.0
+      ],
+      "List_Mat": [],
+      "List_Mat_Num": []
+    },
+    {
+      "Index": 112,
+      "Category": 1,
+      "Name": "Generous",
+      "Icon": "gamescene/ui/ui_canvas/icon/Icon_Tax_Citizen",
+      "T_Name": "Generous",
+      "EffectValue_A": 5.0,
+      "EffectValue_B": 1.0,
+      "Description": "<color=#1E8A00>+5</color> happiness for 1 day, after paying tax",
+      "List_Ability": [],
+      "List_AbilityValue": [],
+      "List_Mat": [],
+      "List_Mat_Num": []
+    },
+    {
+      "Index": 113,
+      "Category": 1,
+      "Name": "Lucky",
+      "Icon": "gamescene/ui/ui_canvas/icon/Icon_Dependency",
+      "T_Name": "Lucky",
+      "EffectValue_A": 25.0,
+      "EffectValue_B": -999,
+      "Description": "<color=#1E8A00>+25%</color> chance to get an additional resource when mining",
+      "List_Ability": [
+        207
+      ],
+      "List_AbilityValue": [
+        25.0
+      ],
+      "List_Mat": [],
+      "List_Mat_Num": []
+    },
+    {
+      "Index": 115,
+      "Category": 1,
+      "Name": "Heavy Handed",
+      "Icon": "gamescene/ui/ui_canvas/icon/Icon_RangeAttack",
+      "T_Name": "Heavy Handed",
+      "EffectValue_A": 2.0,
+      "EffectValue_B": -999,
+      "Description": "<color=#1E8A00>+2</color> to attack power",
+      "List_Ability": [
+        5
+      ],
+      "List_AbilityValue": [
+        2.0
+      ],
+      "List_Mat": [],
+      "List_Mat_Num": []
+    },
+    {
+      "Index": 116,
+      "Category": 1,
+      "Name": "Thick Skinned",
+      "Icon": "gamescene/character/team/bufficon/Icon_DefenceMode",
+      "T_Name": "Thick Skinned",
+      "EffectValue_A": 2.0,
+      "EffectValue_B": -999,
+      "Description": "<color=#1E8A00>+2</color> to defense",
+      "List_Ability": [
+        6
+      ],
+      "List_AbilityValue": [
+        2.0
+      ],
+      "List_Mat": [],
+      "List_Mat_Num": []
+    },
+    {
+      "Index": 118,
+      "Category": 1,
+      "Name": "Nimble",
+      "Icon": "gamescene/character/team/bufficon/Icon_Dodge",
+      "T_Name": "Nimble",
+      "EffectValue_A": 20.0,
+      "EffectValue_B": -999,
+      "Description": "<color=#1E8A00>+20%</color> to dodge chance",
+      "List_Ability": [
+        200
+      ],
+      "List_AbilityValue": [
+        20.0
+      ],
+      "List_Mat": [],
+      "List_Mat_Num": []
+    },
+    {
+      "Index": 4003,
+      "Category": 1,
+      "Name": "Builder",
+      "Icon": "gamescene/ui/ui_canvas/icon/Icon_BuildCost2",
+      "T_Name": "Builder",
+      "EffectValue_A": 20.0,
+      "EffectValue_B": 0,
+      "Description": "Construction efficiency <color=#1E8A00>+20%</color>",
+      "List_Ability": [
+        241
+      ],
+      "List_AbilityValue": [
+        20.0
+      ],
+      "List_Mat": [],
+      "List_Mat_Num": []
+    },
+    {
+      "Index": 4004,
+      "Category": 1,
+      "Name": "Spelunker",
+      "Icon": "gamescene/ui/ui_canvas/icon/Icon_Mining",
+      "T_Name": "Spelunker",
+      "EffectValue_A": 20.0,
+      "EffectValue_B": 0,
+      "Description": "Gathering and mining efficiency <color=#1E8A00>+20%</color>",
+      "List_Ability": [
+        227
+      ],
+      "List_AbilityValue": [
+        20.0
+      ],
+      "List_Mat": [],
+      "List_Mat_Num": []
+    },
+    {
+      "Index": 4005,
+      "Category": 1,
+      "Name": "Pollinator",
+      "Icon": "gamescene/map/tileobject/FlowerObject",
+      "T_Name": "Pollinator",
+      "EffectValue_A": 0.5,
+      "EffectValue_B": 0,
+      "Description": "Pollinates nearby plants every 20 seconds",
+      "List_Ability": [],
+      "List_AbilityValue": [],
+      "List_Mat": [],
+      "List_Mat_Num": []
+    },
+    {
+      "Index": 4006,
+      "Category": 1,
+      "Name": "Spiritual",
+      "Icon": "gamescene/ui/ui_canvas/icon/Icon_Stability",
+      "T_Name": "Spiritual",
+      "EffectValue_A": 5,
+      "EffectValue_B": 0,
+      "Description": "Happiness <color=#1E8A00>+5</color> when part of a religion",
+      "List_Ability": [],
+      "List_AbilityValue": [],
+      "List_Mat": [],
+      "List_Mat_Num": []
+    },
+    {
+      "Index": 4007,
+      "Category": 1,
+      "Name": "Steady",
+      "Icon": "gamescene/ui/ui_canvas/icon/Icon_KnockX",
+      "T_Name": "Steady",
+      "EffectValue_A": 1.0,
+      "EffectValue_B": 0,
+      "Description": "Prevent knockback in combat",
+      "List_Ability": [
+        23
+      ],
+      "List_AbilityValue": [
+        1.0
+      ],
+      "List_Mat": [],
+      "List_Mat_Num": []
+    },
+    {
+      "Index": 4008,
+      "Category": 1,
+      "Name": "Socialite",
+      "Icon": "gamescene/ui/ui_canvas/icon/Icon_Happiness",
+      "T_Name": "Socialite",
+      "EffectValue_A": 3.0,
+      "EffectValue_B": 0,
+      "Description": "Happiness <color=#1E8A00>+3</color> to nearby citizens for 4 hours",
+      "List_Ability": [],
+      "List_AbilityValue": [],
+      "List_Mat": [],
+      "List_Mat_Num": []
+    },
+    {
+      "Index": 4009,
+      "Category": 1,
+      "Name": "Chef",
+      "Icon": "gamescene/ui/ui_canvas/icon/Icon_Cooking",
+      "T_Name": "Chef",
+      "EffectValue_A": 1.0,
+      "EffectValue_B": 0,
+      "Description": "Finished products <color=#1E8A00>+1</color> at the grill and bakery",
+      "List_Ability": [],
+      "List_AbilityValue": [],
+      "List_Mat": [],
+      "List_Mat_Num": []
+    }
+  ]
