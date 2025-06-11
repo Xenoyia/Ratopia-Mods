@@ -15,7 +15,7 @@ using System.Linq;
 
 namespace EnhancedRatMating
 {
-    [BepInPlugin("enhancedratmating", "Enhanced Rat Mating", "1.0.1")]
+    [BepInPlugin("enhancedratmating", "Enhanced Rat Mating", "1.0.2")]
     public class EnhancedRatMating : BaseUnityPlugin
     {
         public static EnhancedRatMating Instance { get; private set; }
@@ -525,20 +525,55 @@ namespace EnhancedRatMating
             var ccInfo = new CCMake_Info(0, 0);
             ccInfo.m_Gender = baby.m_Gender;
             ccInfo.Name = baby.m_UnitName;
-            ccInfo.SkinInfo = Helpers.GetCombineSkin(parentA.m_SkinInfo, parentB.m_SkinInfo, ccInfo.m_Gender);
+
+            // Get the appropriate parent's skin info based on gender
+            var skinParent = (parentA.m_Gender == ccInfo.m_Gender) ? parentA : parentB;
+            ccInfo.SkinInfo = skinParent.m_SkinInfo;
 
             ccInfo.Power = Helpers.GetAutoRange(parentA.m_Power, parentB.m_Power + 1);
             ccInfo.Dex = Helpers.GetAutoRange(parentA.m_Dex, parentB.m_Dex + 1);
             ccInfo.Int = Helpers.GetAutoRange(parentA.m_Int, parentB.m_Int + 1);
 
             ccInfo.List_CharInfo.Clear();
-            ccInfo.List_CharInfo.AddRange(new[] { parentA.List_CharInfo[0], parentB.List_CharInfo[1] });
+            // For adults, we need to use the adult character info
+            if (ccInfo.m_Gender == Gender.Male)
+            {
+                // For males, use male character info from either parent
+                var maleParent = (parentA.m_Gender == Gender.Male) ? parentA : parentB;
+                ccInfo.List_CharInfo.Add(maleParent.List_CharInfo[0]); // First character info is adult male
+                // Add second character info from the other parent
+                var otherParent = (parentA.m_Gender == Gender.Male) ? parentB : parentA;
+                ccInfo.List_CharInfo.Add(otherParent.List_CharInfo[1]); // Second character info is adult
+            }
+            else
+            {
+                // For females, use female character info from either parent
+                var femaleParent = (parentA.m_Gender == Gender.Female) ? parentA : parentB;
+                ccInfo.List_CharInfo.Add(femaleParent.List_CharInfo[0]); // First character info is adult female
+                // Add second character info from the other parent
+                var otherParent = (parentA.m_Gender == Gender.Female) ? parentB : parentA;
+                ccInfo.List_CharInfo.Add(otherParent.List_CharInfo[1]); // Second character info is adult
+            }
 
             ccInfo.m_Religion = (UnityEngine.Random.Range(0, 2) == 0) ? parentA.m_Religion : parentB.m_Religion;
 
             T_Citizen newAdult = GameMgr.Instance._T_UnitMgr.MakeCitizenByChild(baby.Tf.position, ccInfo, baby.m_ID);
             newAdult.m_UnitName = baby.m_UnitName;
             newAdult.NameUpdate();
+
+            // Reset appearance-related properties
+            newAdult.m_CharState = CharState.None;
+            newAdult.m_AniState = AniState.Idle;
+            newAdult.m_Buff.RefKill("Children"); // Remove children buff
+            newAdult.m_Buff.RefKill("Baby"); // Remove any baby-related buffs
+            
+            // Handle appearance like the original DeathCheckC
+            newAdult.m_SkinInfo.ClearOverrideSkin();
+            newAdult.m_SkinInfo.SkinSet(newAdult.m_SkinInfo.m_Skin, newAdult.m_SkinInfo.m_SkeletonData);
+            newAdult.m_SkinInfo.UpdateCombinedSkin();
+            newAdult.PlayAniOneShot_EndIdle(AniState.Idle, "Z_Test/Z_Jerry");
+			newAdult.gameObject.SetActive(true);
+			GameMgr.Instance._PoolMgr.Pool_BuildSmokeEffect.GetNextObj().GetComponent<BuildSmokeEffect>().BSE_EffectSet(newAdult.Tf.position, 1);
 
             // Optionally: show effect, update UI, etc.
             GameMgr.Instance._EcoMgr.m_CitizenUI.CitizenTxtUpdate();
